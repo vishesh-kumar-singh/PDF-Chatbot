@@ -1,5 +1,5 @@
 import numpy as np
-import pymupdf
+import pdfplumber
 import re
 from sentence_transformers import SentenceTransformer
 import torch
@@ -18,10 +18,10 @@ def clean_text(text):
 
 
 def get_chunks(pdf):
-    file=pymupdf.open(stream=pdf.read(), filetype="pdf")
+    file=pdfplumber.open(pdf)
     total_text=""
-    for page in file:
-        text=page.get_text()
+    for page in file.pages:
+        text=page.extract_text()
 
         total_text+=" "+clean_text(text)
     paragraphs=total_text.split('\n')

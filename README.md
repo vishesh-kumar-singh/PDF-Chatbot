@@ -61,27 +61,19 @@ Watch the demo video on YouTube:
 
 [![PDF Data Extraction Demo](https://img.youtube.com/vi/WU7s754RnfU/0.jpg)](https://youtu.be/WU7s754RnfU)
 
-## Requirements
 
-- Python 3.x
-- PyTorch
-- Streamlit
-- sentence-transformers
-- PyMuPDF
-- rank_bm25
-- NumPy
 
 ## Installation
 
 1. Create and activate a conda environment:
 ```bash
-conda create -n torchbase python=3.x
-conda activate torchbase
+conda create -n pdfbot python=3.12
+conda activate pdfbot
 ```
 
 2. Install the required packages:
 ```bash
-pip install streamlit pymupdf sentence-transformers rank_bm25
+pip install -r requirements.txt
 ```
 
 ## Usage

@@ -1,10 +1,10 @@
 # PDF Data Extraction and Search
 
-A Streamlit-based application that allows users to upload PDF documents and perform intelligent searches by asking queries about the required information. This project demonstrates an innovative approach to document search and retrieval without relying on Large Language Models (LLMs).
+A Streamlit-based application that allows users to upload PDF documents and perform intelligent searches by asking queries about the required information. This project demonstrates an application of concept of **RAG** combined with other traditional search methods.
 
 ## Project Challenge
 
-The key challenge of this project was to develop an effective document search system without using any LLM frameworks. Instead of leveraging pre-trained models like GPT or BERT, we implemented a hybrid approach that combines:
+The key challenge of this project was to develop an effective document search system. Instead of leveraging pre-trained models like GPT or BERT, we implemented a hybrid approach that combines:
 
 - Semantic search using lightweight sentence transformers
 - Traditional information retrieval with BM25
@@ -13,7 +13,6 @@ The key challenge of this project was to develop an effective document search sy
 This approach offers several advantages:
 - Lower computational requirements
 - Faster processing times
-- No need for large model downloads
 - More predictable and controlled results
 - Easier deployment and maintenance
 
